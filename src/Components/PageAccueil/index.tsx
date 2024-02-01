@@ -11,7 +11,6 @@ const PageAccueil = () => {
         <>
         <Header/>
         <Body/>
-        <Footer/>
 
 
     

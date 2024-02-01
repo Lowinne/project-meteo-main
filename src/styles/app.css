@@ -1,0 +1,359 @@
+
+/*-----------------Variable CSS-------------*/
+
+:root{
+    --font: "Quicksand",sans-serif;
+    --hover_black:invert(9%) sepia(84%) saturate(3909%) hue-rotate(194deg) brightness(95%) contrast(102%);
+    --hover_pink :invert(15%) sepia(92%) saturate(7105%) hue-rotate(316deg) brightness(88%) contrast(103%);
+    --grid_template : "20% 60% 20%";
+    --transition : 350ms ; 
+}
+
+/*-----------------Fin Variable CSS-------------*/
+
+
+/*-----------------HEADER CSS-------------*/
+
+header{
+    width: 100%;
+    font-family: var(--font);
+}
+
+
+#header_top_left{
+    display: flex;
+}
+
+
+@media screen and (max-width: 1245px){
+    #header_top{
+        scale: 0.8;
+        margin-left: -150px;
+    }
+
+    
+}
+
+#barre_search{
+    position:relative;
+    height:'50px', 
+}
+
+.input_research{
+    border:solid 1px lightgrey;
+    border-radius:10px; 
+    padding:15px;
+    position:relative; 
+    top: 30px;
+    left:100px; 
+    font-size: 14px
+}
+
+.icon_research{
+    position: relative;
+    left: 430px;
+    bottom: 5px;
+    height: 22px;
+    width: 22px;
+    filter: invert(92%) sepia(10%) saturate(10%) hue-rotate(351deg) brightness(65%) contrast(95%);
+}
+
+.icon_research:hover{
+    filter: var(--hover_black);
+}
+
+.div_icon_reseaux{
+    position: relative;
+    top:45px;
+    left: 150px;
+}
+
+.div_icon_reseaux{
+    height: 65px;
+    width: 65px;
+}
+
+#facebook:hover{
+    filter: var(--hover_pink);
+}
+
+#twitter:hover{
+    filter: var(--hover_pink);
+}
+
+#linkedin:hover{
+    filter: var(--hover_pink);
+}
+
+#bell{
+    position: relative;
+    height:30px;
+    width: 30px;
+    bottom: 20px;
+    left: 375px;
+    filter: invert(92%) sepia(10%) saturate(10%) hue-rotate(351deg) brightness(65%) contrast(95%);
+}
+
+
+.recherche input[type="text"]{
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #003661;
+    border: solid 1px #dee2e6;
+    width: 360px;
+    max-width: 100%;
+}
+
+#header_middle #header_middle_middle .onglet {
+    font-family: var(--font);
+    margin:5px;
+    padding-top: 5px;
+    font-size:12px;
+    font-weight:800;
+
+
+        .icon{
+            display:inline-flex ;
+            height:17px ;
+            width:17px;
+        }
+
+        .icon_down{
+            display: inline-flex;
+            height:17px ;
+            width:17px;
+            position: relative;
+            top: 2px;
+            left: 2px;
+        }
+
+        .libelle{
+            display: flexbox;
+            margin-left: 15px ;
+            position:relative;
+            bottom: 2px
+        }
+
+
+        #burger_menu{
+            height:25px ;
+            width:25px;
+            position:relative;
+            left: 50%;
+            filter: invert(20%) sepia(98%) saturate(5013%) hue-rotate(312deg) brightness(83%) contrast(112%);
+        }
+
+        #burger_menu:hover{
+            filter: var(--hover_black);
+        }
+}
+
+
+#prevision:hover {
+    transition: var(--transition);
+    filter: var(--hover_pink);
+}
+
+#meteo_marine:hover {
+    transition: var(--transition);
+    filter: var(--hover_pink);
+}
+
+#meteo_montagne:hover {
+    transition: var(--transition);
+    filter: var(--hover_pink);
+}
+
+#climat:hover {
+    transition: var(--transition);
+    filter: var(--hover_pink);
+}
+
+#actus_dossiers:hover {
+    transition: var(--transition);
+    filter: var(--hover_pink);
+}
+
+#services:hover {
+    transition: var(--transition);
+    filter: var(--hover_pink);
+}
+
+#header #header_bottom {
+    background-color: #036ba1;
+    position: relative;
+    z-index: 100;
+}
+
+#barre-favoris #barre-favoris-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 13%;
+    list-style-type: none;
+}
+
+#add-favorite .autocomplete {
+    position: relative;
+    display: inline-flex;
+    grid-template-columns: var(--grid_template);
+}
+
+#add-favorite .autocomplete span {
+    padding:'5px'  ;
+    font-family: var(--font);
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#add-favorite button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    filter: invert(100%) sepia(0%) saturate(11%) hue-rotate(227deg) brightness(102%) contrast(106%);
+
+}
+
+
+/*-----------------FIN HEADER CSS-------------*/
+
+/*----------------- BODY CSS-------------*/
+.title_body{
+    color: #145e9a;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left : 2%
+
+}
+
+/*-----------------FIN BODY CSS-------------*/
+
+/*-----------------FOOTER CSS-------------*/
+
+
+.grid{
+    display: grid ;
+    grid-template-columns: var(--grid_template) ;
+    background-image: linear-gradient(to bottom,#0076c9 0%,#1c9bd4 100%);
+    padding: 2%;
+    font-family: var(--font);
+    grid-template-rows:(7, 100px)
+}
+
+.title_top_consult{
+    display:flex;
+    color:white;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+    grid-column: 2/3
+}
+
+.top_ville_consult{
+    max-width: 815px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    list-style: none;
+    grid-row: 3;
+    grid-column:2/3;
+    color: white;
+    font-family: var(--font);
+    margin-top: 2px;
+    font-weight: 600;
+    scale: 0.9
+}
+
+.separateur{
+    grid-row: 2;
+    grid-column: 2/3;
+    border: solid 3px white;
+    border-radius: 2px;
+    width: 220px;
+    justify-self:center;
+    scale:0.5;
+    margin-top:10px;
+    margin-bottom:10px
+}
+
+.ville_consult{
+    flex-grow: 1;
+    display: flex; 
+    width: 33%;
+    height: 29px;
+    cursor: pointer;
+
+}
+
+.button_reseaux{
+    display: flex;
+    gap: 30px;
+    grid-row: 4;
+    grid-column: 2/3;
+    justify-self: center;
+    margin-top: 25px;
+}
+
+.bouton{
+    background-color: #145e9a;
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+}
+
+.icon_bouton{
+    scale: 0.6;
+    justify-self: center;
+    filter: invert(500%) sepia(0%) saturate(300%) hue-rotate(227deg) brightness(402%) contrast(356%);
+    cursor: pointer;
+}
+
+.bouton:hover  {
+    filter: var(--hover_pink);
+}
+
+.rubrique  {
+    display: flex;
+    margin-top: 25px;
+    grid-row: 6;
+    grid-column: 2/3;
+    color: white;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 15px;
+    width: 110%;
+    
+        .right_arrow{
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            filter: invert(13%) sepia(97%) saturate(6847%) hue-rotate(317deg) brightness(89%) contrast(101%);
+            margin-right: 5px;
+
+        }
+
+        .libelle{
+            display: inline-block;
+            position:relative;
+            margin-right: 5px;
+        }
+
+        .libelle:hover{
+            filter: var(--hover_pink);
+        }
+}
+
+/*-----------------FIN FOOTER CSS-------------*/
+
